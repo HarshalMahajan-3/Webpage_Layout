@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+   background-color: rgb(239, 200, 129);
+   height: 100vh;
+}
+
+/* Header Section */
+ header p{
+    color: rgb(237, 231, 231);
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    padding: 3px 7px;
+    font-size: 21px;
+    font-weight: 700;
+ }
+ header p:hover {
+   color: aqua;
+ }
+
+ nav ul {
+   display: flex;
+   list-style: none;
+   background-color: rgb(186, 93, 186);
+   justify-content: end;
+   align-items: center;
+   padding: 3px 119px;
+ }
+
+ nav ul li{
+    padding: 3px 33px;
+    color: white;
+    cursor: pointer;
+ }
+ 
+ li:hover{
+    color: rgb(30, 30, 30);
+ }
+
+ /* Main Section */
+ div{
+    text-align: center;
+    padding: 11px;
+    margin-top: 227px;
+ }
+ div label {
+    display: block;
+    font-size: 19px;
+    margin: 11px;
+    color: #333;
+}
+
+div input {
+   border: 1px solid black;
+   width: 277px;
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 5px;
+}
+
+.gender-selection {
+    display: flex;
+    margin-top: 33px;
+    margin-right: 111px;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input[type="radio"] {
+    accent-color: #e068d6;
+    
+}
+
+footer {
+   background-color: rgb(39, 38, 38);
+   text-align: center;
+   color: white;
+   font-size: 14px;
+   margin-top: 437px;
+   padding: 4px;
+}
+footer p:hover{
+   color: #e068d6;
+}
+
+@media (max-width:768px) {
+   header p {
+      font-size: 16px;
+      padding: 2px 4px;
+  }
+
+  nav ul {
+      justify-content: center; 
+      padding: 3px;
+  }
+  nav ul li {
+      padding: 2px 10px; 
+      font-size: 14px;
+  }
+
+  div {
+      margin-top: 20px;
+      max-width: 90%;
+  }
+
+  .gender-selection {
+      gap: 3px;
+  }
+
+  footer {
+      font-size: 12px;
+      padding: 2px;
+      margin-top: 481px;
+  }
+}
+
+@media (max-width: 480px) {
+   header p {
+       font-size: 14px;
+   }
+
+   nav ul li {
+       font-size: 12px;
+       padding: 2px;
+   }
+
+   div label {
+       font-size: 14px;
+   }
+   div input {
+       padding: 7px;
+   }
+
+   footer {
+       font-size: 10px;
+       margin-top: 526px;
+   }
+}
